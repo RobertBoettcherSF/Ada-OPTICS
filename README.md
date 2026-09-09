@@ -27,12 +27,12 @@ Part of the **RobertBoettcherSF Ada algorithms series** (siblings:
 
 | Concern | Approach | Notes |
 | --- | --- | --- |
-| **Distance** | Euclidean L2 | All dimensions |
-| **Core point** | \|N_ε(p)\| ≥ MinPts | Includes p itself |
-| **Core-distance** | MinPts-th smallest dist in N_ε(p) | `Undefined` if not core |
-| **Reachability** | max(core-dist(p), dist(p,o)) | From core p to o |
-| **Seeds** | Min-heap by reachability | Undefined ≡ +∞ |
-| **Extraction** | ξ threshold cut | DBSCAN-equivalent labels |
+| **Distance** | Euclidean $L_2$ | All dimensions |
+| **Core point** | $\|N_\varepsilon(p)\| \ge \mathrm{MinPts}$ | Includes $p$ itself |
+| **Core-distance** | $\mathrm{MinPts}$-th smallest dist in $N_\varepsilon(p)$ | `Undefined` if not core |
+| **Reachability** | $\max(\text{core-dist}(p), \mathrm{dist}(p,o))$ | From core $p$ to $o$ |
+| **Seeds** | Min-heap by reachability | $\text{Undefined} \equiv +\infty$ |
+| **Extraction** | $\xi$ threshold cut | DBSCAN-equivalent labels |
 
 ## Parameters
 
