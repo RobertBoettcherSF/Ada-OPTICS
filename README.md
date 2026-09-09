@@ -44,13 +44,10 @@ Part of the **RobertBoettcherSF Ada algorithms series** (siblings:
 
 ## Definitions
 
-- **Core point:** \|N_ε(p)\| ≥ MinPts (neighborhood includes p).
-- **core-dist_ε,MinPts(p):** `Undefined` if \|N_ε(p)\| < MinPts; else the
-  **MinPts-th smallest** distance in N_ε(p) (self contributes distance 0).
-- **reachability-dist(o, p):** `Undefined` if p is not core; else
-  `max(core-dist(p), dist(p,o))`.
-- **UNDEFINED** is exposed as constant `Undefined` (`-1.0`) plus explicit
-  `Has_Core_Distance` / `Has_Reachability` flags on results.
+- **Core point:** $|N_\varepsilon(p)| \ge \mathrm{MinPts}$ (neighborhood includes $p$).
+- **$\text{core-dist}_{\varepsilon,\mathrm{MinPts}}(p)$:** `Undefined` if $|N_\varepsilon(p)| < \mathrm{MinPts}$; else the **$\mathrm{MinPts}$-th smallest** distance in $N_\varepsilon(p)$ (self contributes distance 0).
+- **$\text{reachability-dist}(o, p)$:** `Undefined` if $p$ is not core; else $\max(\text{core-dist}(p), \mathrm{dist}(p,o))$.
+- **UNDEFINED** is exposed as constant `Undefined` (`-1.0`) plus explicit `Has_Core_Distance` / `Has_Reachability` flags on results.
 
 ## Cluster extraction (ξ cut)
 
